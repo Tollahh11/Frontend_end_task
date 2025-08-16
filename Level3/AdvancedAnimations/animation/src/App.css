@@ -1,0 +1,54 @@
+.aa-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 16px;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #0f1724;
+  line-height: 1.4;
+}
+
+.aa-hero {
+  margin-bottom: 32px;
+  padding: 24px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(12, 14, 20, 0.06);
+}
+
+.aa-hero-inner { max-width: 820px; }
+.aa-kicker { text-transform: uppercase; font-size: 12px; letter-spacing: 0.12em; color: #6b7280; }
+.aa-title { font-size: 32px; margin: 8px 0 8px; }
+.aa-lead { color: #4b5563; max-width: 680px; }
+.aa-cta-row { margin-top: 16px; display: flex; gap: 12px; }
+.aa-btn { padding: 10px 14px; border-radius: 12px; border: none; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; }
+.aa-btn-primary { background: #0f1724; color: white; }
+.aa-btn-primary:focus { outline: 3px solid rgba(15,23,36,0.12); }
+.aa-btn-secondary { background: #0f1724; border: 1px solid #e5e7eb; }
+
+/* Grid */
+.aa-grid { display: grid; grid-template-columns: 1fr; gap: 16px; margin-bottom: 32px; }
+@media(min-width: 768px) { .aa-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.aa-card { padding: 20px; background: white; border-radius: 12px; box-shadow: 0 6px 18px rgba(12, 14, 20, 0.06); transition: transform 180ms cubic-bezier(.2,.9,.3,1), box-shadow 180ms; will-change: transform; }
+.aa-card:focus { outline: 3px solid rgba(15,23,36,0.08); }
+.aa-card:hover { transform: translateY(-4px); }
+.aa-card-title { margin: 0 0 8px; font-size: 18px; }
+.aa-card-desc { margin: 0; color: #4b5563; }
+.aa-card-footer { margin-top: 12px; }
+.aa-link { font-size: 14px; text-decoration: underline; }
+
+/* Sequence */
+.aa-sequence { padding: 20px; background: #f8fafc; border-radius: 12px; margin-bottom: 24px; }
+.aa-section-title { margin: 0 0 12px; font-size: 20px; }
+.aa-steps { display: grid; gap: 12px; }
+@media(min-width: 768px) { .aa-steps { grid-template-columns: repeat(3, 1fr); } }
+.aa-step { padding: 14px; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(12,14,20,0.04); }
+.aa-step-title { margin: 0 0 6px; font-size: 16px; }
+.aa-step-desc { margin: 0; color: #4b5563; font-size: 13px; }
+
+.aa-notes { color: #374151; font-size: 13px; }
+
+/* Reduced motion: respects user preference */
+@media (prefers-reduced-motion: reduce) {
+  .aa-card, .aa-btn, .aa-step { transition: none !important; }
+}
